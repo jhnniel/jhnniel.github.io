@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 220px;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 12px;
+    position: relative;
+    margin-top: 0%;
+}
+
+.nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #707d84;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+}
+
+.name {
+    font-size: 95px;
+}
+
+.textbox {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 18px;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+
+.btn:hover {
+    border: 1px solid #f1f1f1;
+    background: #848b8f;
+    transition: 1s;
+}
+
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Pages/about\ pic.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1 {
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+/* CTA */
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Pages/fb\ cover.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.cta h1 {
+    color: #ffffff;
+    margin: 40px;
+    padding: 0;
+    font-size: 40px;
+
+}
+
+/*Cottage*/
+
+.cottage {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+}
+
+.cot {
+
+    border-radius: 10px;
+
+    position: relative;
+    overflow: hidden;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+
+
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.ft {
+    padding-bottom: 30px;
+}
+
+.cottage h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.cottage p {
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.cot img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(140, 135, 135, 0.7);
+
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #f1f1f1;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.layer:hover h3 {
+    bottom: 45%;
+    opacity: 1;
+}
+
+.inclusion {
+    text-align: left;
+    width: 80%;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 0;
+    display: flex;
+    margin-left: 9%;
+    background-color: #f0f0f0;
+    border-radius:10px;
+    margin-bottom: 30px;
+
+}
+.inclusion .second-div p{   
+    font-size: 25px;
+}
+.inclusion ul li {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+
+
+}
+.inclusion h4{
+    font-size: 24px;
+
+}
+.first-div{
+    background-color: #d0d0d0;
+}
+.first-div li{
+    font-size: 20px;
+}
+.first-div,
+.second-div {
+    text-align: left;
+    padding: 30px;
+
+}
+
+.first-div h2,
+.second-div h2 {
+    font-size: 34px;
+    color: #333;
+}
+
+.first-div p,
+.second-div p {
+    font-size: 16px;
+    color: #666;
+}
+
+/*Footer*/
+.navs {
+    display: flex;
+    gap: 50px;
+    margin-left: 35%;
+
+}
+
+.navs a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: #fff3f3;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+
+.icons {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+}

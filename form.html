@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Balsahan | Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav img {
+            width: 220px;
+
+        }
+
+        .nav-links {
+            flex: 1;
+            text-align: right;
+
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 5px 12px;
+            position: relative;
+            margin-top: 0%;
+        }
+
+        .nav-links ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #707d84;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+
+        }
+
+        .name {
+            font-size: 95px;
+        }
+
+        .textbox {
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+
+        .sub-header {
+            height: 50vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Pages/about\ pic\.jpg);
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+
+        }
+
+        .sub-header h1 {
+            margin-top: 100px;
+            font-size: 50px;
+        }
+
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            width: 50%;
+            margin-left: 25%;
+            position: relative;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #000000;
+
+        }
+
+        .n {
+            background-color: #333;
+            padding: 20px;
+        }
+
+        .inclusion {
+            text-align: left;
+            width: 80%;
+            position: relative;
+            border-radius: 5px;
+            margin-top: 0;
+            display: flex;
+            margin-left: 9%;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin-bottom: 30px;
+
+        }
+
+        .inclusion .second-div p {
+            font-size: 25px;
+        }
+
+        .inclusion ul li {
+            text-decoration: none;
+            list-style: none;
+            text-align: left;
+
+
+        }
+
+        .inclusion h4 {
+            font-size: 24px;
+            color: #a9a9a9;
+
+        }
+
+        .first-div {
+            background-color: #d0d0d0;
+        }
+
+        .first-div li {
+            font-size: 20px;
+            color: #666666;
+        }
+
+        .first-div,
+        .second-div {
+            text-align: left;
+            padding: 30px;
+
+        }
+
+        .first-div h3,
+        .second-div h3 {
+            font-size: 34px;
+            color: #a9a9a9;
+
+        }
+
+        .first-div p,
+        .second-div p {
+            font-size: 16px;
+            color: #a9a9a9;
+            text-align: left;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="Pages/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="destination.html">DESTINATION</a></li>
+                    <li><a href="rates.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Booking Form</h1>
+    </section>
+
+    <div class="container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="pax">Number of Pax:</label>
+                <input type="number" id="pax" name="pax" required>
+            </div>
+            <div class="form-group">
+                <label for="cottage-type">Cottage Type:</label>
+                <select id="cottage-type" name="cottage-type" required>
+                    <option value="">Select Cottage Type</option>
+                    <option value="normal">Normal Cottage</option>
+                    <option value="deck">Cottage with Deck</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <p>For payment you can use Gcash payment, you need to downpayment 25% of the payment to comfirm your booking
+        <br> balance will be collected on the day of reparture, communicate us within this information below <br>You'll
+        get confirmation within minutes. If you don't see any confirmation, Please reach us here.
+    </p>
+    <div class="inclusion">
+        <div class="first-div">
+            <h3>Inclusion</h3>
+            <ul>
+                <li>Bangkero Fee</li>
+                <li>Lifeguard Fee</li>
+                <li>Floating Cottage</li>
+                <li>Grill</li>
+                <li>Life Vest</li>
+                <li>Googles</li>
+                <li>Island Hoping</li>
+            </ul>
+
+        </div>
+
+        <div class="second-div">
+            <h3>Contact Information</h3>
+            <span>
+                <h4>Facebook page</h4>
+                <a href="https://www.facebook.com/search/top?q=little%20boracay%20calatagan%20batangas%20-%20amy%2">
+                    <p>Little Boracay Calatagan - Amy's Floating Cottage</p>
+                </a>
+            </span>
+            <span>
+                <h4>Contact Number</h4>
+                <p>0912-803-9852</p>
+            </span>
+        </div>
+    </div>
+    </div>
+    <div class="n">
+
+    </div>
+</body>
+
+</html>
